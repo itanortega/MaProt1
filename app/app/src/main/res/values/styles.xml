@@ -32,4 +32,8 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="toolbar1">
+        <item name="android:color">@color/colorBlanco</item>
+    </style>
+
 </resources>
