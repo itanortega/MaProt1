@@ -7,11 +7,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SignoActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     int id;
+    TextView Txt_Nombre_Signo_B = null;
+    TextView Txt_Fechas_B = null;
+    ImageView ImgBanner = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +28,11 @@ public class SignoActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
         showToolbar(Utilidades.get_nombre_signo(this, id), true);
+        
+        Txt_Nombre_Signo_B = (TextView) this.findViewById(R.id.Txt_Nombre_Signo_Banner);
+        Txt_Fechas_B = (TextView) this.findViewById(R.id.Txt_Fechas_Banner);
+        ImgBanner = (ImageView) this.findViewById(R.id.ImgBanner);
+        cambiarBanner();
     }
 
     public void showToolbar(String title, boolean upButton){
@@ -42,5 +52,11 @@ public class SignoActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Utilidades.redireccionar(this, item, 1);
         return super.onOptionsItemSelected(item);
+    }
+
+    private void cambiarBanner() {
+        Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
+        Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
     }
 }
