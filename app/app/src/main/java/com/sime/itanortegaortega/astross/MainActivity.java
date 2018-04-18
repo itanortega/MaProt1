@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cambiarCentro(int i) {
-        MenuDirection utilidades = new MenuDirection();
+        Utilidades utilidades = new Utilidades();
         Txt_Nombre_Signo.setText(utilidades.get_nombre_signo(this, i));
         Txt_Fechas.setText(utilidades.get_fecha_signo(this, i));
         ImgVCentral.setImageDrawable((Drawable) utilidades.get_imagen_signo(this, i));

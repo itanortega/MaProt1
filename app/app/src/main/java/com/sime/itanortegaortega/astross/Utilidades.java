@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-class MenuDirection{
+class Utilidades {
 
 
     public String get_nombre_signo(Activity act, int id) {

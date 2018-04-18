@@ -47,13 +47,13 @@ public class SignoActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        MenuDirection md = new MenuDirection();
+        Utilidades md = new Utilidades();
         md.redireccionar(this, item, id);
         return true;
     }
 
     private void cambiarBanner() {
-        /*MenuDirection utilidades = new MenuDirection();
+        /*Utilidades utilidades = new Utilidades();
         Txt_Nombre_Signo_B.setText(utilidades.getNombreSigno(id));
         Txt_Fechas_B.setText(utilidades.getFechasSigno(id));
         ImgBanner.setImageDrawable(utilidades.getImagenSigno(id));*/
