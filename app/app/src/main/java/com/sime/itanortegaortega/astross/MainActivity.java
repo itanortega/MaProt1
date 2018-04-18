@@ -73,80 +73,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cambiarCentro(int i) {
-        id = i;
-        switch (i){
-            case 1:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.aries));
-                Txt_Fechas.setText(getResources().getString(R.string.aries_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.aries));
-                break;
-
-            case 2:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.tauro));
-                Txt_Fechas.setText(getResources().getString(R.string.tauro_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.tauro));
-                break;
-
-            case 3:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.geminis));
-                Txt_Fechas.setText(getResources().getString(R.string.geminis_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.geminis));
-                break;
-
-            case 4:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.cancer));
-                Txt_Fechas.setText(getResources().getString(R.string.cancer_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.cancer));
-                break;
-
-            case 5:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.leo));
-                Txt_Fechas.setText(getResources().getString(R.string.leo_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.leo));
-                break;
-
-            case 6:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.virgo));
-                Txt_Fechas.setText(getResources().getString(R.string.virgo_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.virgo));
-                break;
-
-            case 7:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.libra));
-                Txt_Fechas.setText(getResources().getString(R.string.libra_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.libra));
-                break;
-
-            case 8:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.escorpio));
-                Txt_Fechas.setText(getResources().getString(R.string.escorpio_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.escorpio));
-                break;
-
-            case 9:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.sagitario));
-                Txt_Fechas.setText(getResources().getString(R.string.sagitario_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.sagitario));
-                break;
-
-            case 10:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.carpicornio));
-                Txt_Fechas.setText(getResources().getString(R.string.capricornio_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.capricornio));
-                break;
-
-            case 11:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.acuario));
-                Txt_Fechas.setText(getResources().getString(R.string.acuario_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.acuario));
-                break;
-
-            case 12:
-                Txt_Nombre_Signo.setText(getResources().getString(R.string.piscis));
-                Txt_Fechas.setText(getResources().getString(R.string.piscis_f));
-                ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.piscis));
-                break;
-        }
+        MenuDirection utilidades = new MenuDirection();
+        Txt_Nombre_Signo.setText(utilidades.get_nombre_signo(this, i));
+        Txt_Fechas.setText(utilidades.get_fecha_signo(this, i));
+        ImgVCentral.setImageDrawable((Drawable) utilidades.get_imagen_signo(this, i));
     }
 
     public void toSigno(View view) {

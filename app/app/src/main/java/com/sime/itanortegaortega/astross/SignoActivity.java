@@ -26,7 +26,7 @@ public class SignoActivity extends AppCompatActivity {
         Txt_Fechas_B = (TextView) this.findViewById(R.id.Txt_Fechas_Banner);
         ImgBanner = (ImageView) this.findViewById(R.id.ImgBanner);
         id = (int) intent.getIntExtra("id", 1);
-        cambiarBanner(id);
+        cambiarBanner();
         toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
 
         showToolbar("titulo", true);
@@ -34,7 +34,7 @@ public class SignoActivity extends AppCompatActivity {
 
     public void showToolbar(String title, boolean upButton){
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(title);
+        getSupportActionBar().setTitle(getResources().getString(R.string.aries));
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
     }
 
@@ -46,83 +46,16 @@ public class SignoActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        MenuDirection md = new MenuDirection();
+        md.redireccionar(this, item, id);
         return true;
     }
 
-    private void cambiarBanner(int i) {
-        id = i;
-        switch (i){
-            case 1:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.aries));
-                Txt_Fechas_B.setText(getResources().getString(R.string.aries_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.aries));
-                break;
-
-            case 2:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.tauro));
-                Txt_Fechas_B.setText(getResources().getString(R.string.tauro_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.tauro));
-                break;
-
-            case 3:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.geminis));
-                Txt_Fechas_B.setText(getResources().getString(R.string.geminis_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.geminis));
-                break;
-
-            case 4:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.cancer));
-                Txt_Fechas_B.setText(getResources().getString(R.string.cancer_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.cancer));
-                break;
-
-            case 5:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.leo));
-                Txt_Fechas_B.setText(getResources().getString(R.string.leo_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.leo));
-                break;
-
-            case 6:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.virgo));
-                Txt_Fechas_B.setText(getResources().getString(R.string.virgo_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.virgo));
-                break;
-
-            case 7:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.libra));
-                Txt_Fechas_B.setText(getResources().getString(R.string.libra_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.libra));
-                break;
-
-            case 8:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.escorpio));
-                Txt_Fechas_B.setText(getResources().getString(R.string.escorpio_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.escorpio));
-                break;
-
-            case 9:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.sagitario));
-                Txt_Fechas_B.setText(getResources().getString(R.string.sagitario_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.sagitario));
-                break;
-
-            case 10:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.carpicornio));
-                Txt_Fechas_B.setText(getResources().getString(R.string.capricornio_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.capricornio));
-                break;
-
-            case 11:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.acuario));
-                Txt_Fechas_B.setText(getResources().getString(R.string.acuario_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.acuario));
-                break;
-
-            case 12:
-                Txt_Nombre_Signo_B.setText(getResources().getString(R.string.piscis));
-                Txt_Fechas_B.setText(getResources().getString(R.string.piscis_f));
-                ImgBanner.setImageDrawable(getResources().getDrawable(R.drawable.piscis));
-                break;
-        }
+    private void cambiarBanner() {
+        /*MenuDirection utilidades = new MenuDirection();
+        Txt_Nombre_Signo_B.setText(utilidades.getNombreSigno(id));
+        Txt_Fechas_B.setText(utilidades.getFechasSigno(id));
+        ImgBanner.setImageDrawable(utilidades.getImagenSigno(id));*/
     }
 }
