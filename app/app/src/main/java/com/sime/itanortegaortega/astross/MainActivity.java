@@ -1,6 +1,8 @@
 package com.sime.itanortegaortega.astross;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    SharedPreferences preferencias;
+
     TextView Txt_Nombre_Signo = null;
     TextView Txt_Fechas = null;
     ImageView ImgVCentral = null;
@@ -21,7 +25,12 @@ public class MainActivity extends AppCompatActivity {
         Txt_Nombre_Signo = (TextView) this.findViewById(R.id.Txt_Nombre_Signo);
         Txt_Fechas = (TextView) this.findViewById(R.id.Txt_Fechas);
         ImgVCentral = (ImageView) this.findViewById(R.id.ImgVCentral);
-        cambiarCentro(1);
+
+        preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferencias.edit();
+        editor.putInt("id", 1);
+        cambiarCentro(preferencias.getInt("id", 1));
+        editor.commit();
     }
 
     public void setAries(View view) {
@@ -73,7 +82,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cambiarCentro(int i) {
-        id = i;
+        SharedPreferences.Editor editor = preferencias.edit();
+        editor.putInt("id", i);
+        editor.commit();
+
         Txt_Nombre_Signo.setText(Utilidades.get_nombre_signo(this, i));
         Txt_Fechas.setText(Utilidades.get_fecha_signo(this, i));
         ImgVCentral.setImageDrawable((Drawable) Utilidades.get_imagen_signo(this, i));
@@ -81,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void toSigno(View view) {
         Intent intent = new Intent(this, SignoActivity.class);
-        intent.putExtra("id", id);
         startActivity(intent);
     }
 }
