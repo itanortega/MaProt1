@@ -27,10 +27,8 @@ public class MainActivity extends AppCompatActivity {
         ImgVCentral = (ImageView) this.findViewById(R.id.ImgVCentral);
 
         preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferencias.edit();
-        editor.putInt("id", 1);
+        id = preferencias.getInt("id", 1);
         cambiarCentro(preferencias.getInt("id", 1));
-        editor.commit();
     }
 
     public void setAries(View view) {

@@ -58,6 +58,7 @@ public class SignoActivity extends AppCompatActivity {
     }
 
     private void cambiarBanner() {
+        preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
         ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
