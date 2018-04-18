@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sime.itanortegaortega.astross.MainActivity"
-    android:padding="2dp">
+    android:padding="2dp"
+    android:background="@drawable/fndam">
 
     <LinearLayout
         android:id="@+id/imgCentral"
@@ -20,8 +21,8 @@
         android:orientation="vertical"
         android:onClick="toSigno">
         <ImageView
-            android:layout_width="110dp"
-            android:layout_height="110dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
             android:src="@drawable/tauro"
             android:layout_gravity="center_horizontal"
             android:id="@+id/ImgVCentral"/>
@@ -29,6 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/aries"
+            android:textColor="@color/colorBlanco"
             android:layout_gravity="center_horizontal"
             android:id="@+id/Txt_Nombre_Signo"
             style="@style/nom1"/>
@@ -36,6 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
             android:text="@string/aries_f"
             android:layout_gravity="center_horizontal"
             android:id="@+id/Txt_Fechas"
@@ -46,7 +49,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/fnd"
+        android:src="@drawable/circulofnd"
         app:layout_constraintStart_toStartOf = "parent"
         app:layout_constraintLeft_toLeftOf = "parent"
         app:layout_constraintEnd_toEndOf = "parent"

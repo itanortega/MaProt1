@@ -24,4 +24,12 @@
     <string name="capricornio_f">21 Dic - 20 Ene</string>
     <string name="acuario_f">21 Ene - 19 Feb</string>
     <string name="piscis_f">20 Feb - 20 Mar</string>
+    <string name="sdiario">Horóscopo diario</string>
+    <string name="ssemanal">Horóscopo semanal</string>
+    <string name="scomp">Compatibilidad</string>
+    <string name="snum">Números de la suerte</string>
+    <string name="sfondos">Fondos de pantalla</string>
+    <string name="spnl">PNL</string>
+    <string name="srecom">Recomendar a un amigo</string>
+    <string name="about">Acerca de …</string>
 </resources>
