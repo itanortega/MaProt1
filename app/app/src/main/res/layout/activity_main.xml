@@ -84,7 +84,7 @@
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
-            android:src="@drawable/leo"
+            android:src="@drawable/cancer"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
@@ -97,7 +97,7 @@
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
-            android:src="@drawable/virgo"
+            android:src="@drawable/leo"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
@@ -110,6 +110,19 @@
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
+            android:src="@drawable/virgo"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="165">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/libra"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -119,7 +132,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintCircle="@id/imgCentral"
         app:layout_constraintCircleRadius="@dimen/radio"
-        app:layout_constraintCircleAngle="175">
+        app:layout_constraintCircleAngle="195">
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
@@ -132,7 +145,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintCircle="@id/imgCentral"
         app:layout_constraintCircleRadius="@dimen/radio"
-        app:layout_constraintCircleAngle="205">
+        app:layout_constraintCircleAngle="225">
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
@@ -145,7 +158,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintCircle="@id/imgCentral"
         app:layout_constraintCircleRadius="@dimen/radio"
-        app:layout_constraintCircleAngle="235">
+        app:layout_constraintCircleAngle="255">
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
@@ -158,7 +171,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintCircle="@id/imgCentral"
         app:layout_constraintCircleRadius="@dimen/radio"
-        app:layout_constraintCircleAngle="275">
+        app:layout_constraintCircleAngle="285">
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
@@ -171,7 +184,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintCircle="@id/imgCentral"
         app:layout_constraintCircleRadius="@dimen/radio"
-        app:layout_constraintCircleAngle="305">
+        app:layout_constraintCircleAngle="315">
         <ImageView
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
