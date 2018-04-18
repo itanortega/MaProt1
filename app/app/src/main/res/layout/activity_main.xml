@@ -18,8 +18,8 @@
         app:layout_constraintBottom_toBottomOf = "parent"
         android:orientation="vertical">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:src="@drawable/aries"
             android:layout_gravity="center_horizontal" />
         <TextView
@@ -43,8 +43,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="345">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/aries"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -56,8 +56,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="15">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/tauro"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -69,8 +69,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="45">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/geminis"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -82,8 +82,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="75">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/leo"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -95,8 +95,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="105">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/virgo"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -108,8 +108,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="135">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/libra"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -121,8 +121,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="175">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/escorpio"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -134,8 +134,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="205">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/sagitario"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -147,8 +147,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="235">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/capricornio"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -160,8 +160,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="275">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/acuario"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
@@ -173,8 +173,8 @@
         app:layout_constraintCircleRadius="@dimen/radio"
         app:layout_constraintCircleAngle="305">
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
             android:src="@drawable/piscis"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
