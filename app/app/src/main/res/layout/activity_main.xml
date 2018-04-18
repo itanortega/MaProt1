@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sime.itanortegaortega.astross.MainActivity"
-    android:background="@drawable/border_radius">
+    android:padding="2dp">
 
     <LinearLayout
         android:id="@+id/imgCentral"
@@ -21,19 +21,22 @@
         <ImageView
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:src="@drawable/aries"
-            android:layout_gravity="center_horizontal" />
+            android:src="@drawable/tauro"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ImgVCentral"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/aries"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/Txt_Nombre_Signo"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/aries_f"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/Txt_Fechas"/>
 
     </LinearLayout>
 
@@ -59,7 +62,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/aries"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setAries"/>
     </LinearLayout>
 
     <LinearLayout
@@ -72,7 +76,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/tauro"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setTauro"/>
     </LinearLayout>
 
     <LinearLayout
@@ -85,7 +90,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/geminis"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setGeminis"/>
     </LinearLayout>
 
     <LinearLayout
@@ -98,7 +104,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/cancer"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setCancer"/>
     </LinearLayout>
 
     <LinearLayout
@@ -111,7 +118,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/leo"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setLeo"/>
     </LinearLayout>
 
     <LinearLayout
@@ -124,7 +132,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/virgo"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setVirgo"/>
     </LinearLayout>
 
     <LinearLayout
@@ -137,7 +146,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/libra"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setLibra"/>
     </LinearLayout>
 
     <LinearLayout
@@ -150,7 +160,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/escorpio"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setEscorpio"/>
     </LinearLayout>
 
     <LinearLayout
@@ -163,7 +174,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/sagitario"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setSagitario"/>
     </LinearLayout>
 
     <LinearLayout
@@ -176,7 +188,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/capricornio"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setCapricornio"/>
     </LinearLayout>
 
     <LinearLayout
@@ -189,7 +202,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/acuario"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setAcuario"/>
     </LinearLayout>
 
     <LinearLayout
@@ -202,7 +216,8 @@
             android:layout_width="@dimen/hw"
             android:layout_height="@dimen/hw"
             android:src="@drawable/piscis"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="setPiscis"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
