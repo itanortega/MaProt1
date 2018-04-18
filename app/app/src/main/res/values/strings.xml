@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Astross</string>
+    <string name="aries">Aries</string>
+    <string name="aries_f">21 Mar - 20 Abr</string>
 </resources>
