@@ -5,41 +5,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class AboutActivity extends AppCompatActivity {
 
-    int id;
     Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-        Intent intent = getIntent();
-        id = (int) intent.getIntExtra("id", 1);
-        toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
 
-        showToolbar("titulo", true);
+        toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
+        showToolbar(getResources().getString(R.string.about), true);
     }
 
     public void showToolbar(String title, boolean upButton){
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(getResources().getString(R.string.about));
+        getSupportActionBar().setTitle(title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        Utilidades md = new Utilidades();
-        md.redireccionar(this, item, id);
-        return true;
     }
 }

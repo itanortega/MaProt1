@@ -16,15 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignoActivity" />
-        <activity android:name=".DiarioActivity" />
-        <activity android:name=".SemanalActivity" />
-        <activity android:name=".CompatibilidadActivity" />
-        <activity android:name=".NumerosActivity" />
-        <activity android:name=".FondosActivity" />
-        <activity android:name=".PnlActivity" />
-        <activity android:name=".RecomendarActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".SignoActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".DiarioActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".SemanalActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".NumerosActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".CompatibilidadActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".FondosActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".PnlActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".RecomendarActivity" android:parentActivityName=".SignoActivity" />
+        <activity android:name=".AboutActivity" android:parentActivityName=".SignoActivity" />
     </application>
 
 </manifest>

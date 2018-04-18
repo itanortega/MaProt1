@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Astross</string>
+    <string name="aries">Aries</string>
+    <string name="tauro">Tauro</string>
+    <string name="geminis">Géminis</string>
+    <string name="cancer">Cáncer</string>
+    <string name="leo">Leo</string>
+    <string name="virgo">Virgo</string>
+    <string name="libra">Libra</string>
+    <string name="escorpio">Escorpio</string>
+    <string name="sagitario">Sagitario</string>
+    <string name="capricornio">Capricornio</string>
+    <string name="acuario">Acuario</string>
+    <string name="piscis">Piscis</string>
+    <string name="aries_f">21 Mar - 20 Abr</string>
+    <string name="tauro_f">21 Abr - 20 May</string>
+    <string name="geminis_f">21 May - 20 Jun</string>
+    <string name="cancer_f">21 Jun - 20 Jul</string>
+    <string name="leo_f">21 Jul - 20 Ago</string>
+    <string name="virgo_f">21 Ago - 20 Sep</string>
+    <string name="libra_f">21 Sep - 20 Oct</string>
+    <string name="escorpio_f">21 Oct - 20 Nov</string>
+    <string name="sagitario_f">21 Nov - 20 Dic</string>
+    <string name="capricornio_f">21 Dic - 20 Ene</string>
+    <string name="acuario_f">21 Ene - 19 Feb</string>
+    <string name="piscis_f">20 Feb - 20 Mar</string>
+    <string name="sdiario">Horóscopo diario</string>
+    <string name="ssemanal">Horóscopo semanal</string>
+    <string name="scomp">Compatibilidad</string>
+    <string name="snum">Números de la suerte</string>
+    <string name="sfondos">Fondos de pantalla</string>
+    <string name="spnl">PNL</string>
+    <string name="srecom">Recomendar a un amigo</string>
+    <string name="about">Acerca de …</string>
+</resources>

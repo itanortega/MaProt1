@@ -73,10 +73,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cambiarCentro(int i) {
-        Utilidades utilidades = new Utilidades();
-        Txt_Nombre_Signo.setText(utilidades.get_nombre_signo(this, i));
-        Txt_Fechas.setText(utilidades.get_fecha_signo(this, i));
-        ImgVCentral.setImageDrawable((Drawable) utilidades.get_imagen_signo(this, i));
+        Txt_Nombre_Signo.setText("nombre");
+        Txt_Fechas.setText("fechas");
+        ImgVCentral.setImageDrawable(getResources().getDrawable(R.drawable.acuario));
     }
 
     public void toSigno(View view) {

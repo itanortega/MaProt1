@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="imagenSigno">
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="cardSigno">
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/border_radius</item>
+    </style>
+
+    <style name="layoutRow">
+        <item name="android:layout_weight">0.25</item>
+    </style>
+
+    <style name="fec1">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="nom1">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

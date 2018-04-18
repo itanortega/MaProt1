@@ -6,10 +6,59 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-class Utilidades {
+/**
+ * Created by itanortegaortega on 18/04/18.
+ */
 
+public class Utilidades {
 
-    public String get_nombre_signo(Activity act, int id) {
+    public static void redireccionar(AppCompatActivity act, MenuItem item, int i) {
+        Intent intent;
+        switch (item.getItemId()){
+            case R.id.iteDiario:
+                intent = new Intent(act,DiarioActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+            case R.id.iteSemanal:
+                intent = new Intent(act,SemanalActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+            case R.id.iteComp:
+                intent = new Intent(act,CompatibilidadActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+            case R.id.iteNum:
+                intent = new Intent(act,NumerosActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+            case R.id.iteFon:
+                intent = new Intent(act,FondosActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+            case R.id.itePNL:
+                intent = new Intent(act,PnlActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+            case R.id.iteRecom:
+                intent = new Intent(act,RecomendarActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+            case R.id.iteAbout:
+                intent = new Intent(act,AboutActivity.class);
+                intent.putExtra("id", i);
+                act.startActivity(intent);
+                break;
+        }
+    }
+
+    public static String get_nombre_signo(Activity act, int id) {
         String res;
         res = act.getResources().getString(R.string.aries);
         switch (id){
@@ -64,7 +113,7 @@ class Utilidades {
         return res;
     }
 
-    public String get_fecha_signo(Activity act, int id) {
+    public static String get_fecha_signo(Activity act, int id) {
         String res = "";
         switch (id){
             case 1:
@@ -170,40 +219,5 @@ class Utilidades {
                 break;
         }
         return res;
-    }
-
-    public void redireccionar(Activity act, MenuItem item, int id) {
-
-
-        Class destino = null;
-        switch (item.getItemId()){
-            case R.id.iteDiario:
-                destino = DiarioActivity.class;
-                break;
-            case R.id.iteSemanal:
-                destino = SemanalActivity.class;
-                break;
-            case R.id.iteComp:
-                destino = CompatibilidadActivity.class;
-                break;
-            case R.id.iteNum:
-                destino = NumerosActivity.class;
-                break;
-            case R.id.iteFon:
-                destino = FondosActivity.class;
-                break;
-            case R.id.itePNL:
-                destino = PnlActivity.class;
-                break;
-            case R.id.iteRecom:
-                destino = RecomendarActivity.class;
-                break;
-            case R.id.iteAbout:
-                destino = AboutActivity.class;
-                break;
-        }
-
-        Intent intent = new Intent(act, destino);
-        act.startActivity(intent);
     }
 }
