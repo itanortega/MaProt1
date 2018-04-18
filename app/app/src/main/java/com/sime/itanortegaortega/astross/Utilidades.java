@@ -167,7 +167,7 @@ public class Utilidades {
         return res;
     }
 
-    public Drawable get_imagen_signo(Activity act, int id) {
+    public static Drawable get_imagen_signo(Activity act, int id) {
         Drawable res = act.getResources().getDrawable(R.drawable.aries);;
         switch (id){
             case 1:
