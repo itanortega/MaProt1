@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sime.itanortegaortega.astross.MainActivity">
+    tools:context="com.sime.itanortegaortega.astross.MainActivity"
+    android:background="@drawable/border_radius">
 
     <LinearLayout
         android:id="@+id/imgCentral"
@@ -35,6 +36,28 @@
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fnd1"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintBottom_toBottomOf = "parent"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/fnd1"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintBottom_toBottomOf = "parent"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
