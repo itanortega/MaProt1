@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.widget.CalendarView;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class SemanalActivity extends AppCompatActivity {
@@ -35,7 +37,7 @@ public class SemanalActivity extends AppCompatActivity {
         Calendario_crl = (CalendarView) this.findViewById(R.id.Calendario_crl);
 
         Calendar c = Calendar.getInstance();
-        String dia1 = Integer.toString(c.get(Calendar.DATE));
+        String dia1 = Integer.toString(c.getFirstDayOfWeek());
         String mes1 = Integer.toString(c.get(Calendar.MONTH));
         String annio1 = Integer.toString(c.get(Calendar.YEAR));
         String dia2 = Integer.toString(c.get(Calendar.DATE));
@@ -45,7 +47,7 @@ public class SemanalActivity extends AppCompatActivity {
         long milliTime = c.getTimeInMillis();
         Calendario_crl.setDate(milliTime);
 
-        Txt_FechaHoy_Semanal.setText(getResources().getString(R.string.delD) + " " + dia1 + " " + getResources().getString(R.string.de) + " " + Utilidades.get_mes(this, Integer.parseInt(mes1)) + " " + getResources().getString(R.string.de) + " " + annio1 + " " + getResources().getString(R.string.al) + " " + dia2 + " " + getResources().getString(R.string.de) + " " + Utilidades.get_mes(this, Integer.parseInt(mes2)) + " " + getResources().getString(R.string.de) + " " + annio2);
+        Txt_FechaHoy_Semanal.setText(getResources().getString(R.string.deD) + " " + getPrimerDiaDeLaSemana() + " " + getResources().getString(R.string.a) + " " + getUltimoDiaDeLaSemana());
         Txt_Semanal.setText(Utilidades.get_semana(this, id));
     }
 
@@ -53,5 +55,28 @@ public class SemanalActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+    }
+
+    public String getPrimerDiaDeLaSemana() {
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.DAY_OF_WEEK, cal.getFirstDayOfWeek());
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        String fechaInicio = dateFormat.format(cal.getTime());
+        return fechaInicio;
+    }
+
+    public String getUltimoDiaDeLaSemana() {
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.DAY_OF_WEEK, cal.getFirstDayOfWeek());
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.add(Calendar.DAY_OF_YEAR, 6);
+        String fechaInicio = dateFormat.format(cal.getTime());
+        return fechaInicio;
     }
 }

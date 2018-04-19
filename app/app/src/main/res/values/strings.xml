@@ -125,4 +125,6 @@
     <string name="del">del</string>
     <string name="delD">Del</string>
     <string name="al">al</string>
+    <string name="deD">De</string>
+    <string name="a">A</string>
 </resources>
