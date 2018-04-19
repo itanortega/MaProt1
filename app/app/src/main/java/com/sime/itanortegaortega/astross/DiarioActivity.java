@@ -37,8 +37,8 @@ public class DiarioActivity extends AppCompatActivity {
         String mes = Integer.toString(c.get(Calendar.MONTH));
         String annio = Integer.toString(c.get(Calendar.YEAR));
 
-        Txt_FechaHoy.setText(dia + " de " + mes + " del " + annio);
-        Txt_Diario.setText(Utilidades.get_elemento(this, id));
+        Txt_FechaHoy.setText(getResources().getString(R.string.horoscopodel) + " " + dia + " " + getResources().getString(R.string.de) + " " + Utilidades.get_mes(this, Integer.parseInt(mes)) + " " + getResources().getString(R.string.del) + " " + annio);
+        Txt_Diario.setText(Utilidades.get_diario(this, id));
     }
 
     public void showToolbar(String title, boolean upButton){

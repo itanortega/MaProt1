@@ -56,20 +56,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+                <CalendarView
+                    android:id="@+id/Calendario_crl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></CalendarView>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     style="@style/cardGeneral">
                     <TextView
-                        android:id="@+id/Txt_FechaHoy"
+                        android:id="@+id/Txt_FechaHoy_Semanal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/aries"
                         style="@style/titulo1"/>
 
                     <TextView
-                        android:id="@+id/Txt_Diario"
+                        android:id="@+id/Txt_Semanal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/aries_semana"
