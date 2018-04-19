@@ -598,4 +598,59 @@ public class Utilidades {
         }
         return res;
     }
+
+
+    public static Drawable get_imagen_fondo(Activity act, int id) {
+        Drawable res = act.getResources().getDrawable(R.drawable.aries);;
+        switch (id){
+            case 1:
+                res =  act.getResources().getDrawable(R.drawable.aries);
+                break;
+
+            case 2:
+                res =  act.getResources().getDrawable(R.drawable.tauro);
+                break;
+
+            case 3:
+                res =  act.getResources().getDrawable(R.drawable.geminis);
+                break;
+
+            case 4:
+                res =  act.getResources().getDrawable(R.drawable.cancer);
+                break;
+
+            case 5:
+                res =  act.getResources().getDrawable(R.drawable.leo);
+                break;
+
+            case 6:
+                res =  act.getResources().getDrawable(R.drawable.virgo);
+                break;
+
+            case 7:
+                res =  act.getResources().getDrawable(R.drawable.libra);
+                break;
+
+            case 8:
+                res =  act.getResources().getDrawable(R.drawable.escorpio);
+                break;
+
+            case 9:
+                res =  act.getResources().getDrawable(R.drawable.sagitario);
+                break;
+
+            case 10:
+                res =  act.getResources().getDrawable(R.drawable.capricornio);
+                break;
+
+            case 11:
+                res =  act.getResources().getDrawable(R.drawable.acuario);
+                break;
+
+            case 12:
+                res =  act.getResources().getDrawable(R.drawable.piscis);
+                break;
+        }
+        return res;
+    }
 }
