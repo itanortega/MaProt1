@@ -55,4 +55,9 @@
         <item name="android:textSize">16dp</item>
     </style>
 
+    <style name="cardGeneral">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
 </resources>
