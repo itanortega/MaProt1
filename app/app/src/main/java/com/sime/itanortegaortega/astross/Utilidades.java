@@ -441,51 +441,51 @@ public class Utilidades {
         String res = "";
         switch (id){
             case 1:
-                res =  act.getResources().getString(R.string.aries_defectos);
+                res =  act.getResources().getString(R.string.enero);
                 break;
 
             case 2:
-                res = act.getResources().getString(R.string.tauro_defectos);
+                res = act.getResources().getString(R.string.febrero);
                 break;
 
             case 3:
-                res = act.getResources().getString(R.string.geminis_defectos);
+                res = act.getResources().getString(R.string.marzo);
                 break;
 
             case 4:
-                res = act.getResources().getString(R.string.cancer_defectos);
+                res = act.getResources().getString(R.string.abril);
                 break;
 
             case 5:
-                res = act.getResources().getString(R.string.leo_defectos);
+                res = act.getResources().getString(R.string.mayo);
                 break;
 
             case 6:
-                res = act.getResources().getString(R.string.virgo_defectos);
+                res = act.getResources().getString(R.string.junio);
                 break;
 
             case 7:
-                res = act.getResources().getString(R.string.libra_defectos);
+                res = act.getResources().getString(R.string.julio);
                 break;
 
             case 8:
-                res = act.getResources().getString(R.string.escorpio_defectos);
+                res = act.getResources().getString(R.string.agosto);
                 break;
 
             case 9:
-                res = act.getResources().getString(R.string.sagitario_defectos);
+                res = act.getResources().getString(R.string.septiembre);
                 break;
 
             case 10:
-                res = act.getResources().getString(R.string.capricornio_defectos);
+                res = act.getResources().getString(R.string.octubre);
                 break;
 
             case 11:
-                res = act.getResources().getString(R.string.acuario_defectos);
+                res = act.getResources().getString(R.string.noviembre);
                 break;
 
             case 12:
-                res = act.getResources().getString(R.string.piscis_defectos);
+                res = act.getResources().getString(R.string.diciembre);
                 break;
         }
         return res;
@@ -495,51 +495,51 @@ public class Utilidades {
         String res = "";
         switch (id){
             case 1:
-                res =  act.getResources().getString(R.string.aries_defectos);
+                res =  act.getResources().getString(R.string.aries_diario);
                 break;
 
             case 2:
-                res = act.getResources().getString(R.string.tauro_defectos);
+                res = act.getResources().getString(R.string.tauro_diario);
                 break;
 
             case 3:
-                res = act.getResources().getString(R.string.geminis_defectos);
+                res = act.getResources().getString(R.string.geminis_diario);
                 break;
 
             case 4:
-                res = act.getResources().getString(R.string.cancer_defectos);
+                res = act.getResources().getString(R.string.cancer_diario);
                 break;
 
             case 5:
-                res = act.getResources().getString(R.string.leo_defectos);
+                res = act.getResources().getString(R.string.leo_diario);
                 break;
 
             case 6:
-                res = act.getResources().getString(R.string.virgo_defectos);
+                res = act.getResources().getString(R.string.virgo_diario);
                 break;
 
             case 7:
-                res = act.getResources().getString(R.string.libra_defectos);
+                res = act.getResources().getString(R.string.libra_diario);
                 break;
 
             case 8:
-                res = act.getResources().getString(R.string.escorpio_defectos);
+                res = act.getResources().getString(R.string.escorpio_diario);
                 break;
 
             case 9:
-                res = act.getResources().getString(R.string.sagitario_defectos);
+                res = act.getResources().getString(R.string.sagitario_diario);
                 break;
 
             case 10:
-                res = act.getResources().getString(R.string.capricornio_defectos);
+                res = act.getResources().getString(R.string.capricornio_diario);
                 break;
 
             case 11:
-                res = act.getResources().getString(R.string.acuario_defectos);
+                res = act.getResources().getString(R.string.acuario_diario);
                 break;
 
             case 12:
-                res = act.getResources().getString(R.string.piscis_defectos);
+                res = act.getResources().getString(R.string.piscis_diario);
                 break;
         }
         return res;
@@ -549,51 +549,51 @@ public class Utilidades {
         String res = "";
         switch (id){
             case 1:
-                res =  act.getResources().getString(R.string.aries_defectos);
+                res =  act.getResources().getString(R.string.aries_semana);
                 break;
 
             case 2:
-                res = act.getResources().getString(R.string.tauro_defectos);
+                res = act.getResources().getString(R.string.tauro_semana);
                 break;
 
             case 3:
-                res = act.getResources().getString(R.string.geminis_defectos);
+                res = act.getResources().getString(R.string.geminis_semana);
                 break;
 
             case 4:
-                res = act.getResources().getString(R.string.cancer_defectos);
+                res = act.getResources().getString(R.string.cancer_semana);
                 break;
 
             case 5:
-                res = act.getResources().getString(R.string.leo_defectos);
+                res = act.getResources().getString(R.string.leo_semana);
                 break;
 
             case 6:
-                res = act.getResources().getString(R.string.virgo_defectos);
+                res = act.getResources().getString(R.string.virgo_semana);
                 break;
 
             case 7:
-                res = act.getResources().getString(R.string.libra_defectos);
+                res = act.getResources().getString(R.string.libra_semana);
                 break;
 
             case 8:
-                res = act.getResources().getString(R.string.escorpio_defectos);
+                res = act.getResources().getString(R.string.escorpio_semana);
                 break;
 
             case 9:
-                res = act.getResources().getString(R.string.sagitario_defectos);
+                res = act.getResources().getString(R.string.sagitario_semana);
                 break;
 
             case 10:
-                res = act.getResources().getString(R.string.capricornio_defectos);
+                res = act.getResources().getString(R.string.capricornio_semana);
                 break;
 
             case 11:
-                res = act.getResources().getString(R.string.acuario_defectos);
+                res = act.getResources().getString(R.string.acuario_semana);
                 break;
 
             case 12:
-                res = act.getResources().getString(R.string.piscis_defectos);
+                res = act.getResources().getString(R.string.piscis_semana);
                 break;
         }
         return res;
