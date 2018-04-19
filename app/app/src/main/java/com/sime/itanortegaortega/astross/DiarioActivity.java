@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Calendar;
@@ -14,6 +15,9 @@ public class DiarioActivity extends AppCompatActivity {
     SharedPreferences preferencias;
     Toolbar toolbar;
     int id;
+    TextView Txt_Nombre_Signo_B = null;
+    TextView Txt_Fechas_B = null;
+    ImageView ImgBanner = null;
     TextView Txt_FechaHoy;
     TextView Txt_Diario;
 
@@ -28,6 +32,15 @@ public class DiarioActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
         showToolbar(getResources().getString(R.string.sdiario), true);
+
+
+        Txt_Nombre_Signo_B = (TextView) this.findViewById(R.id.Txt_Nombre_Signo_Banner);
+        Txt_Fechas_B = (TextView) this.findViewById(R.id.Txt_Fechas_Banner);
+        ImgBanner = (ImageView) this.findViewById(R.id.ImgBanner);
+
+        Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
+        Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
 
         Txt_FechaHoy = (TextView) this.findViewById(R.id.Txt_FechaHoy);
         Txt_Diario = (TextView) this.findViewById(R.id.Txt_Diario);

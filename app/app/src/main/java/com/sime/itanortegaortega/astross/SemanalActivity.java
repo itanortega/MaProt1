@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.CalendarView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.DateFormat;
@@ -17,6 +18,9 @@ public class SemanalActivity extends AppCompatActivity {
     SharedPreferences preferencias;
     Toolbar toolbar;
     int id;
+    TextView Txt_Nombre_Signo_B = null;
+    TextView Txt_Fechas_B = null;
+    ImageView ImgBanner = null;
     TextView Txt_FechaHoy_Semanal;
     TextView Txt_Semanal;
     CalendarView Calendario_crl;
@@ -31,6 +35,16 @@ public class SemanalActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
         showToolbar(getResources().getString(R.string.ssemanal), true);
+
+
+
+        Txt_Nombre_Signo_B = (TextView) this.findViewById(R.id.Txt_Nombre_Signo_Banner);
+        Txt_Fechas_B = (TextView) this.findViewById(R.id.Txt_Fechas_Banner);
+        ImgBanner = (ImageView) this.findViewById(R.id.ImgBanner);
+
+        Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
+        Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
 
         Txt_FechaHoy_Semanal = (TextView) this.findViewById(R.id.Txt_FechaHoy_Semanal);
         Txt_Semanal = (TextView) this.findViewById(R.id.Txt_Semanal);
@@ -47,7 +61,7 @@ public class SemanalActivity extends AppCompatActivity {
         long milliTime = c.getTimeInMillis();
         Calendario_crl.setDate(milliTime);
 
-        Txt_FechaHoy_Semanal.setText(getResources().getString(R.string.deD) + " " + getPrimerDiaDeLaSemana() + " " + getResources().getString(R.string.a) + " " + getUltimoDiaDeLaSemana());
+        Txt_FechaHoy_Semanal.setText(getResources().getString(R.string.delD) + " " + getPrimerDiaDeLaSemana() + " " + getResources().getString(R.string.al) + " " + getUltimoDiaDeLaSemana());
         Txt_Semanal.setText(Utilidades.get_semana(this, id));
     }
 
