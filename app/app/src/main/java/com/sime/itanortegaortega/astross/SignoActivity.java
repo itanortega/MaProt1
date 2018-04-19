@@ -21,6 +21,11 @@ public class SignoActivity extends AppCompatActivity {
     TextView Txt_Fechas_B = null;
     ImageView ImgBanner = null;
 
+    TextView Txt_Elemento_Signo = null;
+    TextView Txt_Descripcion_Signo = null;
+    TextView Txt_Virtudes_Signo = null;
+    TextView Txt_Defectos_Signo = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +40,13 @@ public class SignoActivity extends AppCompatActivity {
         Txt_Nombre_Signo_B = (TextView) this.findViewById(R.id.Txt_Nombre_Signo_Banner);
         Txt_Fechas_B = (TextView) this.findViewById(R.id.Txt_Fechas_Banner);
         ImgBanner = (ImageView) this.findViewById(R.id.ImgBanner);
-        cambiarBanner();
+
+        Txt_Elemento_Signo = (TextView) this.findViewById(R.id.Txt_Elemento_Signo);
+        Txt_Descripcion_Signo = (TextView) this.findViewById(R.id.Txt_Descripcion_Signo);
+        Txt_Virtudes_Signo = (TextView) this.findViewById(R.id.Txt_Virtudes_Signo);
+        Txt_Defectos_Signo = (TextView) this.findViewById(R.id.Txt_Defectos_Signo);
+
+        cambiarDatos();
     }
 
     public void showToolbar(String title, boolean upButton){
@@ -57,10 +68,15 @@ public class SignoActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void cambiarBanner() {
+    private void cambiarDatos() {
         preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
         ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
+
+        Txt_Elemento_Signo.setText(Utilidades.get_elemento(this, id));
+        Txt_Descripcion_Signo.setText(Utilidades.get_descripcion(this, id));
+        Txt_Virtudes_Signo.setText(Utilidades.get_virtudes(this, id));
+        Txt_Defectos_Signo.setText(Utilidades.get_defectos(this, id));
     }
 }
