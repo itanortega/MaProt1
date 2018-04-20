@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         cambiarCentro(preferencias.getInt("id", 1));
 
         gDetector = new GestureDetector(this);
+        //rotar("R",id*30);
     }
 
 
@@ -167,15 +168,15 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
             float diffX = e2.getX() - e1.getX();
             if (Math.abs(diffX) > Math.abs(diffY)) {
                 if (diffX > 0) {
-                    rotar("R");
+                    rotar("R", 30);
                 } else {
-                    rotar("L");
+                    rotar("L", 30);
                 }
             } else {
                 if (diffY > 0) {
-                    rotar("D");
+                    rotar("D", 30);
                 } else {
-                    rotar("U");
+                    rotar("U", 30);
                 }
             }
         } catch (Exception exception) {
@@ -184,19 +185,19 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         return false;
     }
 
-    private void rotar(String direccion) {
+    private void rotar(String direccion, int grados) {
         ConstraintLayout.LayoutParams layoutParams;
-        int valNewAngle = 0;
+        int valNewAngle = grados;
 
         if(direccion.equals("R") || direccion.equals("U")){
-            valNewAngle = 30;
+            valNewAngle = grados;
             if(id==12){
                 id = 1;
             }else{
                 id++;
             }
         }else{
-            valNewAngle = -30;
+            valNewAngle = -1 * grados;
             if(id==1){
                 id = 12;
             }else{
