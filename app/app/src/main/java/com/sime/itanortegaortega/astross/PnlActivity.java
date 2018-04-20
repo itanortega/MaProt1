@@ -44,9 +44,9 @@ public class PnlActivity extends AppCompatActivity {
         Txt_frase2 = (TextView) this.findViewById(R.id.Txt_frase2);
         Txt_frase3 = (TextView) this.findViewById(R.id.Txt_frase3);
 
-        String f1 = Utilidades.getPNL(this, (int) (Math.random() * 3)+1);
-        String f2 = Utilidades.getPNL(this, (int) (Math.random() * 6)+4);
-        String f3 = Utilidades.getPNL(this, (int) (Math.random() * 9)+7);
+        String f1 = Utilidades.getPNL(this, (int) (Math.random() * 4)+1);
+        String f2 = Utilidades.getPNL(this, (int) (Math.random() * 8)+5);
+        String f3 = Utilidades.getPNL(this, (int) (Math.random() * 12)+9);
 
         Txt_frase1.setText(f1);
         Txt_frase2.setText(f2);

@@ -43,9 +43,10 @@ public class NumerosActivity extends AppCompatActivity {
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
         ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
 
-        String numeros = "4, 6, 8";
-        String chance = "3274";
-        String baloto = "762098";
+
+        String numeros = String.valueOf((int) (Math.random() * 5)+1) + ", " + String.valueOf((int) (Math.random() * 8)+6) +" y " + String.valueOf((int) (Math.random() * 9)+7);
+        String chance = String.valueOf((int) (Math.random() * 9999)+1000);
+        String baloto = String.valueOf((int) (Math.random() * 999999)+100000);
 
         Txt_Numeros.setText(numeros);
         Txt_Chance.setText(chance);
