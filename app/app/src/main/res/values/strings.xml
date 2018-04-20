@@ -139,4 +139,16 @@
     <string name="enviado">Se ha enviado la recomendación al correo:</string>
     <string name="vacio">Debe digitar un correo electrónico</string>
     <string name="correonovalido">El correo no es válido</string>
+    <string name="pnl1">Ten claro que a la cima no llegarás superando a los demás, sino superándote a ti mismo.</string>
+    <string name="pnl2">Nunca dejes que tus miedos ocupen el lugar de tus sueños.</string>
+    <string name="pnl3">La vida no consistía en ser un ganador o un perdedor, se trataba de ser uno mismo y  de dar lo mejor.</string>
+    <string name="pnl4">Jamás es demasiado tarde para intentar lograr aquello que de verdad siempre deseaste.</string>
+    <string name="pnl5">Es posible que la caída sea inevitable, pero continuar en el suelo siempre será opcional.</string>
+    <string name="pnl6">Aprende a no rendirte y sé constante, el principio es la parte más difícil.</string>
+    <string name="pnl7">El reto de mi vida no era otro que descubrir hasta donde podía llegar haciendo lo que me gustaba</string>
+    <string name="pnl8">Ve con confianza en la dirección de tus sueños. Vive la vida que has imaginado.</string>
+    <string name="pnl9">Somos lo que repetidamente hacemos. La excelencia entonces, no es un acto sino un hábito.</string>
+    <string name="pnl10">La única cosa que se interpone entre un hombre y lo que quiere de la vida es a menudo simplemente la voluntad de intentarlo y la fe para creer que es posible</string>
+    <string name="pnl11">A veces perder es ganar y no encontrar lo que se busca es encontrarse.</string>
+    <string name="pnl12">El reto de mi vida no era otro que descubrir hasta donde podía llegar haciendo lo que me gustaba.</string>
 </resources>

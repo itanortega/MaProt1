@@ -599,56 +599,110 @@ public class Utilidades {
         return res;
     }
 
-
-    public static Drawable get_imagen_fondo(Activity act, int id) {
-        Drawable res = act.getResources().getDrawable(R.drawable.aries);;
+    public static String getPNL(Activity act, int id) {
+        String res = "";
         switch (id){
             case 1:
-                res =  act.getResources().getDrawable(R.drawable.aries);
+                res =  act.getResources().getString(R.string.pnl1);
                 break;
 
             case 2:
-                res =  act.getResources().getDrawable(R.drawable.tauro);
+                res = act.getResources().getString(R.string.pnl2);
                 break;
 
             case 3:
-                res =  act.getResources().getDrawable(R.drawable.geminis);
+                res = act.getResources().getString(R.string.pnl3);
                 break;
 
             case 4:
-                res =  act.getResources().getDrawable(R.drawable.cancer);
+                res = act.getResources().getString(R.string.pnl4);
                 break;
 
             case 5:
-                res =  act.getResources().getDrawable(R.drawable.leo);
+                res = act.getResources().getString(R.string.pnl5);
                 break;
 
             case 6:
-                res =  act.getResources().getDrawable(R.drawable.virgo);
+                res = act.getResources().getString(R.string.pnl6);
                 break;
 
             case 7:
-                res =  act.getResources().getDrawable(R.drawable.libra);
+                res = act.getResources().getString(R.string.pnl7);
                 break;
 
             case 8:
-                res =  act.getResources().getDrawable(R.drawable.escorpio);
+                res = act.getResources().getString(R.string.pnl8);
                 break;
 
             case 9:
-                res =  act.getResources().getDrawable(R.drawable.sagitario);
+                res = act.getResources().getString(R.string.pnl9);
                 break;
 
             case 10:
-                res =  act.getResources().getDrawable(R.drawable.capricornio);
+                res = act.getResources().getString(R.string.pnl10);
                 break;
 
             case 11:
-                res =  act.getResources().getDrawable(R.drawable.acuario);
+                res = act.getResources().getString(R.string.pnl11);
                 break;
 
             case 12:
-                res =  act.getResources().getDrawable(R.drawable.piscis);
+                res = act.getResources().getString(R.string.pnl12);
+                break;
+        }
+        return res;
+    }
+
+
+    public static Drawable get_imagen_fondo(Activity act, int id) {
+        Drawable res = act.getResources().getDrawable(R.drawable.aries_fondo);;
+        switch (id){
+            case 1:
+                res =  act.getResources().getDrawable(R.drawable.aries_fondo);
+                break;
+
+            case 2:
+                res =  act.getResources().getDrawable(R.drawable.tauro_fondo);
+                break;
+
+            case 3:
+                res =  act.getResources().getDrawable(R.drawable.geminis_fondo);
+                break;
+
+            case 4:
+                res =  act.getResources().getDrawable(R.drawable.cancer_fondo);
+                break;
+
+            case 5:
+                res =  act.getResources().getDrawable(R.drawable.leo_fondo);
+                break;
+
+            case 6:
+                res =  act.getResources().getDrawable(R.drawable.virgo_fondo);
+                break;
+
+            case 7:
+                res =  act.getResources().getDrawable(R.drawable.libra_fondo);
+                break;
+
+            case 8:
+                res =  act.getResources().getDrawable(R.drawable.escorpio_fondo);
+                break;
+
+            case 9:
+                res =  act.getResources().getDrawable(R.drawable.sagitario_fondo);
+                break;
+
+            case 10:
+                res =  act.getResources().getDrawable(R.drawable.capricornio_fondo);
+                break;
+
+            case 11:
+                res =  act.getResources().getDrawable(R.drawable.acuario_fondo);
+                break;
+
+            case 12:
+                res =  act.getResources().getDrawable(R.drawable.piscis_fondo);
                 break;
         }
         return res;
