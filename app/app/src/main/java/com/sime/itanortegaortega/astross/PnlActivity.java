@@ -44,9 +44,9 @@ public class PnlActivity extends AppCompatActivity {
         Txt_frase2 = (TextView) this.findViewById(R.id.Txt_frase2);
         Txt_frase3 = (TextView) this.findViewById(R.id.Txt_frase3);
 
-        String f1 = "Ten claro que a la cima no llegarás superando a los demás, sino superándote a ti mismo.";
-        String f2 = "Nunca dejes que tus miedos ocupen el lugar de tus sueños.";
-        String f3 = "La vida no consistía en ser un ganador o un perdedor, se trataba de ser uno mismo y de dar lo mejor.";
+        String f1 = Utilidades.getPNL(this, (int) (Math.random() * 3)+1);
+        String f2 = Utilidades.getPNL(this, (int) (Math.random() * 6)+4);
+        String f3 = Utilidades.getPNL(this, (int) (Math.random() * 9)+7);
 
         Txt_frase1.setText(f1);
         Txt_frase2.setText(f2);
