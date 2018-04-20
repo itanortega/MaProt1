@@ -134,4 +134,9 @@
     <string name="chance">Juegue al chance</string>
     <string name="baloto">Juegue al baloto</string>
     <string name="Frases">Frases del día</string>
+    <string name="recomendar_des">Si esta aplicación fué de tu agrado, no dudes en recomendarla, ingresa el correo de un contacto y pulsa el botón enviar.</string>
+    <string name="recomendar">Recomendar</string>
+    <string name="enviado">Se ha enviado la recomendación al correo:</string>
+    <string name="vacio">Debe digitar un correo electrónico</string>
+    <string name="correonovalido">El correo no es válido</string>
 </resources>
