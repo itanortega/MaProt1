@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="radio">130dp</dimen>
+    <dimen name="radio">150dp</dimen>
     <dimen name="radioc">140dp</dimen>
     <dimen name="hw">50dp</dimen>
     <dimen name="tit1">45dp</dimen>
