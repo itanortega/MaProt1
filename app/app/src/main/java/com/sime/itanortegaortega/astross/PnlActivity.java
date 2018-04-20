@@ -16,6 +16,9 @@ public class PnlActivity extends AppCompatActivity {
     TextView Txt_Nombre_Signo_B = null;
     TextView Txt_Fechas_B = null;
     ImageView ImgBanner = null;
+    TextView Txt_frase1 = null;
+    TextView Txt_frase2 = null;
+    TextView Txt_frase3 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,20 @@ public class PnlActivity extends AppCompatActivity {
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
         ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
+
+
+        Txt_frase1 = (TextView) this.findViewById(R.id.Txt_frase1);
+        Txt_frase2 = (TextView) this.findViewById(R.id.Txt_frase2);
+        Txt_frase3 = (TextView) this.findViewById(R.id.Txt_frase3);
+
+        String f1 = "Ten claro que a la cima no llegarás superando a los demás, sino superándote a ti mismo.";
+        String f2 = "Nunca dejes que tus miedos ocupen el lugar de tus sueños.";
+        String f3 = "La vida no consistía en ser un ganador o un perdedor, se trataba de ser uno mismo y de dar lo mejor.";
+
+        Txt_frase1.setText(f1);
+        Txt_frase2.setText(f2);
+        Txt_frase3.setText(f3);
+
     }
 
     public void showToolbar(String title, boolean upButton){

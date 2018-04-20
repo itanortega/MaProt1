@@ -35,6 +35,9 @@ public class FondosActivity extends AppCompatActivity {
         ImgBanner = (ImageView) this.findViewById(R.id.ImgBanner);
         Img_Fondo = (ImageView) this.findViewById(R.id.Img_Fondo);
 
+        Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
+        Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
         Img_Fondo.setImageDrawable((Drawable) Utilidades.get_imagen_fondo(this, id));
     }
 

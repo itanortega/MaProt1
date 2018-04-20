@@ -130,4 +130,8 @@
     <string name="compatibilidadpor">\?%</string>
     <string name="es">es</string>
     <string name="compatiblecon">compatible con</string>
+    <string name="numeros_de_suerte">Número de la suerte</string>
+    <string name="chance">Juegue al chance</string>
+    <string name="baloto">Juegue al baloto</string>
+    <string name="Frases">Frases del día</string>
 </resources>
